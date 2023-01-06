@@ -1,0 +1,147 @@
+{
+    "explorer.confirmDelete": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "debug.onTaskErrors": "showErrors",
+    // ColorTheme
+    "workbench.colorTheme": "GitHub Dark",
+    // Font Settings
+    "editor.fontFamily": "'Cascadia Code', '宋体'",
+    "debug.console.fontFamily": "'Cascadia Code', '宋体'",
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Light', '宋体'",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 1.6,
+    // VsCode Icon
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.presets.jsOfficial": true,
+    "vsicons.presets.tsOfficial": true,
+    "workbench.productIconTheme": "fluent-icons",
+    // Product Icon
+    // Better Comments
+    "better-comments.tags": [
+        {
+            // TODO 表示有未完成的代码
+            "tag": "TODO",
+            "color": "#fa973a",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // FIXME 表示代码需要修正，比 BUG 弱一些
+            "tag": "FIXME",
+            "color": "#ff0000",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // HINT 用于提示协作者实现思路
+            "tag": "HINT",
+            "color": "#2faf64",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // NOTE 用于描述这段代码的作用
+            "tag": "NOTE",
+            "color": "#00b7e4",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // HACK 表示实现的方法有待商榷，很可能以后会出问题，可以标记为 HACK:FIXME: 或单独使用
+            "tag": "HACK",
+            "color": "#fa973a",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            // BUG 表示这里有问题，但还不知道怎么改
+            "tag": "BUG",
+            "color": "#ff0000",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    // Color Highlight
+    // Error Lens
+    "workbench.colorCustomizations": {
+        "errorLens.errorForeground": "#ff0000", // 对应 BUG 和 FIXME
+        "errorLens.warningForeground": "#fa973a", // 对应 HACK 和 TODO
+        "errorLens.infoForeground": "#00b7e4", // 对应 NOTE
+        "errorLens.hintForeground": "#2faf64" // 对应 HINT
+    },
+    // Code Runner
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$fileNameWithoutExt",
+    },
+    
+    //cpp reference
+    "cppref.lang": "zh",
+    "cppref.searchEngine": "Google",
+
+    // doxygen documentation generator
+    "doxdocgen.c.commentPrefix": "///",
+    "doxdocgen.c.firstLine": "///",
+    "doxdocgen.c.lastLine": "///",
+    "doxdocgen.c.triggerSequence": "///",
+    
+    "doxdocgen.generic.authorName": "C3H3_Ttigone",
+    "doxdocgen.generic.authorEmail": "caicaishaoshan@gmail.com",
+
+    "doxdocgen.file.copyrightTag": [
+        "@copyright Copyright (c) {year} C3H3_Ttigone"
+    ],
+
+    // C/C++
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c17",
+
+    //"C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+    //"C_Cpp.inlayHints.parameterNames.enabled": true,
+    //"C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores": false,
+    //"C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false,
+
+    //"C_Cpp.inlayHints.referenceOperator.enabled": true,
+    //"C_Cpp.inlayHints.referenceOperator.showSpace": true,
+
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "C_Cpp.clang_format_style": "Google",
+    
+    // cmake tools
+    "cmake.cmakePath": "cmake",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "iostream": "cpp",
+        "string": "cpp",
+        "ostream": "cpp"
+    },
+
+}
+
+
+  

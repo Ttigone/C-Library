@@ -1,0 +1,36 @@
+{
+    // 使用 IntelliSense 了解相关属性�? 
+    // 悬停以查看现有属性的描述�?
+    // 欲了解更多信息，请访�?: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++ Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "E:/Clibrary/Cexercise/.vscode/exe/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor Intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++ build active file",
+            "miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe"
+
+        },
+
+    ]
+}
